@@ -5,6 +5,8 @@ import Contact from "./components/Contact";
 import Departments from "./components/Departments";
 import Doctors from "./components/Doctors";
 import FAQs from "./components/FAQs";
+import Footer from "./components/Footer";
+import Footer2 from "./components/Footer2";
 import Gallery from "./components/Gallery";
 import Mid from "./components/Mid";
 import Navbar from "./components/Navbar";
@@ -33,6 +35,8 @@ function App() {
       <FAQs />
       <Gallery />
       <Contact />
+      <Footer />
+      <Footer2 />
     </div>
   );
 }

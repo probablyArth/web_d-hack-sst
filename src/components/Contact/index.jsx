@@ -1,6 +1,7 @@
 import React from "react";
 import Item from "./Item";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import Button from "../Button";
 
 const Contact = () => {
   return (
@@ -22,8 +23,8 @@ const Contact = () => {
           <a href="https://www.maps.ie/population/">Population mapping</a>
         </iframe>
       </div>
-      <div className="flex">
-        <div className="flex flex-col">
+      <div className="flex w-full justify-between">
+        <div className="flex flex-col w-[40%]">
           <Item
             Icon={FaMapMarkerAlt}
             name={"Location:"}
@@ -40,11 +41,19 @@ const Contact = () => {
             desc={"A108 Adam Street, New York, 535022"}
           />
         </div>
-        <form className="grid grid-cols-2">
+        <form className="grid grid-cols-2 gap-2 w-[60%]">
           <input type="text" placeholder="Your name" />
           <input type="email" placeholder="Your email" />
-          <input type="text" placeholder="Subject" />
-          <textarea name="" id="" cols="30" rows="10" placeholder="Message" />
+          <input type="text" placeholder="Subject" className="col-span-2" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Message"
+            className="col-span-2"
+          />
+          <Button>Send Message</Button>
         </form>
       </div>
     </div>
