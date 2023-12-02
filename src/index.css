@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bgImage {
+    background: url("../public/images/about.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutWithBg {
+    background: url("../public/images/hero-bg.jpg")
+}
+
+form *{
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+p {
+    text-align: center;
+}
+
+summary {
+    display: block;
+    position: relative;
+}
+
+summary::after {
+right: 0;
+position: absolute;
+display: inline-block;
+content: '^';
+transform: rotate(180deg);
+transition: 0.2s;
+font-size: 20px;
+font-weight: bold;
+}
+
+details[open] > summary::after {
+transform: rotate(360deg);
+}
+
+details[open] > summary {
+    color: blue
+}
